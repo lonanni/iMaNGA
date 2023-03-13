@@ -1,3 +1,12 @@
+############################################################################
+# List of all the galaxies post-processed and analysed in the iMaNGA project
+# from TNG50 simulations. In each row:
+# snapshot-it, galaxy-id, redshift of the snapshot, number of pixel for the FoV, i-band mag, 
+# total stellar mass (log_10/M_\odot), half mass stellar radius [kpc/h], 
+# x, y, z in the simulation volume [kpc], vx, vy, vz, redshift of the observation
+# (see z_rand in Nanni et al. 2023)
+############################################################################
+
 96.0	2.0	0.0337	200.0	-22.967388	11.285687433761304	5.3838124	6706.3994	23708.166	20808.477	144.86569	410.50336	817.644	2.0	0.0337
 96.0	3.0	0.0337	200.0	-22.131527	10.54817121082641	3.3009703	8352.124	24242.078	20803.227	-774.1097	431.4655	201.81914	2.0	0.0337
 98.0	735412.0	0.0095	200.0	-18.53076171875	9.106387844038942	2.674720048904419	9896.26171875	27225.8359375	24231.125	-39.89259719848633	-210.1401824951172	-159.88951110839844	0.0	0.023359589756219712
