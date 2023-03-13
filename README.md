@@ -7,3 +7,5 @@ Here we have an example of how the iMaStar code works, as well as a list of all 
 Updates on the project will be posted on the [official website](http://www.icg.port.ac.uk/imanga/).
 
 For information, contact lorenza.nanni@port.ac.uk
+
+![alt text](posterimage-1-e1669227442722.png)
