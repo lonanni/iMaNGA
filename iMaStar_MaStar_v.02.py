@@ -224,11 +224,11 @@ import astropy.cosmology as co
 cosmo = co.Planck15
 h = float(np.asarray(cosmo.h))
 
-gal_info = np.loadtxt("./secondary_mangacat.txt")
+gal_info = np.loadtxt("./mangacat.txt")
 
 # information from TNG50, the half mass stellar radius
 
-HMSR = 5.38/h
+HMSR = 3.3009703/h
 
 import astropy.units as uu
 
