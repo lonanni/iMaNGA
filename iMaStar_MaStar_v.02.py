@@ -232,7 +232,7 @@ HMSR = 3.3009703/h
 
 import astropy.units as uu
 
-dist_A = cosmo.luminosity_distance(redshift)
+dist_A = cosmo.angular_diameter_distance(redshift)
 theta_spaxel = 0.5*uu.arcsec
 l_spaxel = (theta_spaxel * dist_A).to(uu.pc, uu.dimensionless_angles())
 FoV = 30*HMSR*10**3
