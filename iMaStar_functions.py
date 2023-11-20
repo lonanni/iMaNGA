@@ -39,7 +39,7 @@ sin = float(1.3)
 
 
 def spec_mastar(redshift, Mstar, Zin_m, tin_m):
-        """
+    """
     synthetic MaStar spectrum for a given stellar particle
     
     Parameters
@@ -116,7 +116,7 @@ def spec_mastar(redshift, Mstar, Zin_m, tin_m):
 
 
 def bin_spectrum(redshift, Mstar, Zin, tin, velz, x_bin_id_list,y_bin_id_list, x_bin_id, y_bin_id):
-            """
+    """
         return the sum of all the stellar spectra (as returned by spec_mastar) in a spaxel 
    
    Parameters
@@ -233,7 +233,7 @@ logpnamev = ["p4", "p5", "p6","p7","p8" ]
 
 
 def spec_miii(redshift, SFR,Ziii,logC,logp,fPDR):
-            """
+    """
     synthetic MIII spectrum for a given stellar particle
     
     Parameters
@@ -344,9 +344,7 @@ def spec_miii(redshift, SFR,Ziii,logC,logp,fPDR):
 
 
 def bin_spectrum_miii(redshift, SFR,Ziii,logC,logp,fPDR, velz_miii, x_bin_id_list_miii, y_bin_id_list_miii, x_bin_id, y_bin_id):
-    
-    
-            """
+    """
         return the sum of all the stellar spectra (as returned by spec_miii) in a spaxel 
    
    Parameters
