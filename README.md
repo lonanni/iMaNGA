@@ -25,7 +25,10 @@ The iMaNGA VAC is available at the same link. This catalogue contains all the ga
 
 [iMANGA](https://github.com/lonanni/iMaNGA/blob/main/iMANGA_mockMaNGAdatacubes.ipynb) : Here, we make available the code to go from iMaNGA synthetic+dust attenuated datacubes (provided, see above) to a mock MaNGA observation.  This code can be applied to any other synthetic datacube. It can be modified to obtain other mock observations, with straightforward changes.
 
+# Accessing Simulations information to run the iMaStar code 
 [Illustris TNG Data](https://github.com/lonanni/iMaNGA/blob/main/TNG50_GalaxyFiles.ipynb) : A quick example of how to download data from Illustris/TNG to obtain the necessary data to construct mock observation.
+
+[Eagle Data](https://github.com/lonanni/iMaNGA/blob/main/EAGLE.ipynb) : A quick example of how to download particle data from Eagle snapshots to run the iMaStar code.
 
 
 If you use any of these codes, entirely on in some of their parts, for scientific publications, please, cite [Nanni et al. 2023b](https://arxiv.org/abs/2309.14257).
