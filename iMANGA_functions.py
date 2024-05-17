@@ -35,19 +35,17 @@ def get(path, params=None):
     return r
 
 
-# In[1]:
+
 
 
 def apply_FOV(grid, datacube):
-    grid[grid!=True] = False
+    grid = np.where(grid>-1, True, False)
     #reshaping to apply to the larger synthetic datacube
     grid_300 = np.zeros(shape=(300,300))*False
     grid_300[75:225, 75:225] = grid 
     FoV_datacube = np.where(grid_300==True, datacube, float("Nan"))
     return grid_300, FoV_datacube
 
-
-# In[ ]:
 
 
 
