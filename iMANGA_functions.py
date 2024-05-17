@@ -41,12 +41,29 @@ def get(path, params=None):
 def apply_FOV(grid, datacube):
     grid = np.where(grid>-1, True, False)
     #reshaping to apply to the larger synthetic datacube
-    grid_300 = np.zeros(shape=(300,300))*False
-    grid_300[75:225, 75:225] = grid 
-    FoV_datacube = np.where(grid_300==True, datacube, float("Nan"))
-    return grid_300, FoV_datacube
-
-
+    if (np.shape(grid[0,:])[0] < np.shape(datacube[0,0,:])[0]):
+        grid_new = np.zeros(shape=np.shape(datacube[0,:,:]))*False
+        
+        data_shape_0 = int(np.shape(datacube[0,:,0])[0])
+        grid_shape_0 = int(np.shape(grid[0,:])[0])
+        diff = data_shape_0 - grid_shape_0
+        grid_new[ int(diff/2):int(data_shape_0-(diff/2)), int(diff/2):int(data_shape_0-(diff/2)) ] = grid 
+        
+        FoV_datacube = np.where(grid_new==True, datacube, float("Nan"))
+    
+    if (np.shape(grid[0,:])[0] > np.shape(datacube[0,0,:])[0]):
+        grid_new = np.zeros(shape=np.shape(datacube[0,:,:]))*False
+        
+        data_shape_0 = int(np.shape(datacube[0,:,0])[0])
+        grid_shape_0 = int(np.shape(grid[0,:])[0])
+        
+        diff =  grid_shape_0 - data_shape_0 
+        grid_new = grid[ int(diff/2):int(grid_shape_0-(diff/2)), int(diff/2):int(grid_shape_0-(diff/2)) ] 
+        
+        FoV_datacube = np.where(grid_new==True, datacube, float("Nan"))
+        
+    
+    return grid_new, FoV_datacube
 
 
 
